@@ -1,9 +1,9 @@
 package com.sparta.crud_project.RequestDTO;
 
-public class getInfoRequestDto {
+public class getInfoRequestDTO {
     private Long id;
 
-    public getInfoRequestDto(Long id) {
+    public getInfoRequestDTO(Long id) {
         this.id = id;
     }
 }
