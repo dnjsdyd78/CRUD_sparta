@@ -1,10 +1,12 @@
 package com.sparta.crud_project.RequestDTO;
 
+import java.time.LocalDate;
+
 public class getListRequestDTO {
-    private String modificationDate;
+    private LocalDate modificationDate;
     private String cheduleAssignee;
 
-    public getListRequestDTO(String modificationDate, String cheduleAssignee) {
+    public getListRequestDTO(LocalDate modificationDate, String cheduleAssignee) {
         this.modificationDate = modificationDate;
         this.cheduleAssignee = cheduleAssignee;
     }

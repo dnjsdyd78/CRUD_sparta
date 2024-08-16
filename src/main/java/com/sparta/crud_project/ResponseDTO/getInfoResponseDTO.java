@@ -1,24 +1,21 @@
 package com.sparta.crud_project.ResponseDTO;
 
+import java.time.LocalDate;
+
 public class getInfoResponseDTO {
     private String scheduleAssignee;
     private String todoItem;
-    private String evenDate;
-    private String registrationDate;
-    private String modificationDate;
-    private String password;
-    private String result;
+    private LocalDate evenDate;
+    private LocalDate registrationDate;
+    private LocalDate modificationDate;
 
-    public getInfoResponseDTO(String scheduleAssignee, String todoItem, String evenDate, String registrationDate, String modificationDate, String password) {
+
+    public getInfoResponseDTO(String scheduleAssignee, String todoItem, LocalDate evenDate, LocalDate registrationDate, LocalDate modificationDate) {
         this.scheduleAssignee = scheduleAssignee;
         this.todoItem = todoItem;
         this.evenDate = evenDate;
         this.registrationDate = registrationDate;
         this.modificationDate = modificationDate;
-        this.password = password;
     }
 
-    public getInfoResponseDTO(String result) {
-        this.result = result;
-    }
 }

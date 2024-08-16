@@ -1,13 +1,16 @@
 package com.sparta.crud_project.ResponseDTO;
 
+
+import java.time.LocalDate;
+
 public class createResponseDTO {
     private String scheduleAssignee;
     private String todoItem;
-    private String eventDate;
-    private String registrationDate;
-    private Long id;
+    private LocalDate eventDate;
+    private LocalDate registrationDate;
+    private String id;
 
-    public createResponseDTO(String scheduleAssignee, String todoItem, String eventDate, String registrationDate, Long id) {
+    public createResponseDTO(String scheduleAssignee, String todoItem, LocalDate eventDate, LocalDate registrationDate, String id) {
         this.scheduleAssignee = scheduleAssignee;
         this.todoItem = todoItem;
         this.eventDate = eventDate;
